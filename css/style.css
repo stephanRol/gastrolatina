@@ -1,0 +1,57 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+header
+{
+	background-color: lightblue;
+}
+main
+{
+	background-color: lightyellow;
+}
+footer
+{
+	background-color: pink;
+}
+
+header, main, footer
+{
+	padding: 30px;
+}
+header a
+{
+	color: darkblue;
+	padding: 10px;
+	text-decoration: none;
+}
+header a:hover
+{
+	color: white;
+	background-color: blue;
+}
+
+.flexibel
+{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.produktvorschau
+{
+	display: block;
+	background-color: #ffcc00;
+	padding: 10px;
+	margin: 10px;	
+	width: 300px;
+	height: 300px;
+	text-align: center;
+}
+
+.produktvorschau img
+{
+	height: 150px;
+}
+

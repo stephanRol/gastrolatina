@@ -1,0 +1,38 @@
+<br><br><br>
+<div class="container">
+  <div class="row">
+    <div class="col">
+    </div>
+		<div class="col-8">
+			<div class="card" style="max-width: 2500px;">
+			  <div class="card-body">
+				<h1 style="text-align:center; font-family: Amatic SC, cursive; font-size: 60px;"> Login </h1><br><br>
+					<form action='?seite=login' method='post'>
+					  <div class="mb-3">
+						<label for="exampleInputEmail1" class="form-label" style="font-family: Amatic SC, cursive; font-size: 30px;">Benutzer:</label>
+						<input type="text" name="benutzer" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+					  </div>
+					  <div class="mb-3">
+						<label for="exampleInputPassword1" class="form-label" style="font-family: Amatic SC, cursive; font-size: 30px;">Passwort:</label>
+						<input type="password" name="kennwort" class="form-control" id="exampleInputPassword1">
+					  </div>
+					  <div class="mb-3 form-check"><br>
+						<input type="checkbox" name="merken" value="ja" class="form-check-input" id="exampleCheck1">
+						<label class="form-check-label" for="exampleCheck1" style="font-family: Amatic SC, cursive; font-size: 17px;">Angemeldet bleiben</label><br>
+					  </div>
+				  <button type="submit" class="btn btn-primary" style="font-family: Amatic SC, cursive; font-size: 24px;">Anmelden</button><br><br>
+				    <?php
+						if(isset($_SESSION["mitteilung"]))
+						{
+							echo '<div class="alert alert-danger" role="alert" style="width:685px;">Falsche Eingabe</div>';
+							unset ($_SESSION["mitteilung"]);	//Entfernen löschen
+						}
+				    ?>
+				</form>
+			  </div>
+			</div>
+		</div>
+    <div class="col">
+    </div>
+  </div>
+ </div><br><br><br><br><br><br>
